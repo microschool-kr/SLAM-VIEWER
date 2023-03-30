@@ -1,0 +1,11 @@
+<launch>
+  <!-- Stella -->
+  <include file="$(find stella_bringup)/launch/stella_remote.launch">
+  </include>
+
+  <include file="$(find stella_slam)/launch/stella_cartographer.launch">
+  </include>
+
+  <node pkg="joyjoy" type="joyjoy_node" name="joyjoy" />
+</launch>
+             

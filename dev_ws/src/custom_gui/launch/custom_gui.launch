@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="custom_gui" type="custom_gui" name="custom_gui" output="screen"/>
+    <node pkg="stella_bringup" type="stella_ssh.py" name="stella_ssh" output="screen"/>
+    <!-- <node pkg="stella_bringup" type="stella_test.py" name="stella_test" output="screen"/> -->
+</launch>
